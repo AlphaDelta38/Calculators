@@ -1,0 +1,110 @@
+
+
+.App{
+    min-width: 1920px;
+    min-height: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Form{
+    margin-top: 340px;
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   justify-content: center;
+    gap: 50px;
+    background-color: #f8f9fa;
+}
+
+.Form div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Arial', sans-serif;
+    gap: 20px;
+}
+
+.Form div input{
+    width: 250px;
+    height: 20px;
+    color: black;
+}
+
+.btn button{
+    border: 1px solid black;
+    border-radius: 5px;
+    background: none;
+    cursor: pointer;
+    padding: 10px;
+}
+
+.Result{
+    min-width: 1920px;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    width: 100%;
+    min-height: 600px;
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 30px;
+}
+
+
+.OutX{
+    display: flex;
+    gap: 11px;
+}
+
+.Navigate{
+    height: 100px;
+    width: 100%;
+    min-width: 1920px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    background-color: #f8f9fa;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+.Container__navigate{
+    display: flex;
+    justify-content: space-between;
+    min-width: 600px;
+    width: auto;
+    height: 100%;
+    align-items: center;
+
+}
+
+.btnTo{
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    transition: 0.1s linear ;
+}
+
+
+.btnTo:hover{
+    border: none;
+    cursor: pointer;
+    background: none;
+    font-family: 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 700;
+    transition: 0.1s linear ;
+}
