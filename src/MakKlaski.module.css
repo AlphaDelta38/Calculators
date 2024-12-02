@@ -40,3 +40,19 @@
     height: 20px;
     color: black;
 }
+
+.Arrow{
+    position: absolute;
+    right: 4px;
+    top: -54px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 52px;
+    height: 42px;
+}
+
+.Arrow img{
+    width: 28px;
+    height: 28px;
+}

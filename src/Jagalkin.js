@@ -81,6 +81,9 @@ const jagalkin = (f, table,zminni) =>{
         }
     }
 
+
+
+    console.log(Polinom);
     return  [true, Polinom];
 }
 
