@@ -46,6 +46,7 @@ const BackPack = () => {
 
             tempAllOfWeight  += calcItemMinWeight;
             tempAllOfWeight  += finalWeight;
+
             if(tempAllOfWeight > Weight || tempAllOfWeight === Weight){
                 finalPrice += calcItem.coefficient * calcItemMinWeight;
                 resultMassive.push({weight: calcItemMinWeight, id: calcItem.id})
@@ -62,6 +63,7 @@ const BackPack = () => {
 
             }else{
                 const needWeight = Weight+1 - tempAllOfWeight;
+                console.log(needWeight, tempAllOfWeight, needWeight+1-tempAllOfWeight)
                 finalPrice += calcItem.coefficient * needWeight;
                 resultMassive.push({weight: needWeight, id: calcItem.id})
                 finalWeight += needWeight;

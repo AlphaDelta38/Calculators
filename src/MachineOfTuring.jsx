@@ -10,10 +10,7 @@ const MachineOfTuring = () => {
 
     const [inputData, setInputData] = useState(0);
     const [resultActive, setResultActive] = useState(false);
-    const [vizualizateActive, setvVzualizateActive] = useState(false);
-    const [tapeLineVZ, setTapeLineVZ] =useState([]);
-    const [currentIndexVZ, setCurrentIndexVZ] = useState(-1);
-    const [currentStateVZ, setCurrentStateVZ] = useState("q1");
+    const [wayArrayState,setWayArrayState] = useState("");
 
     const regex = /^\((q\d+)\)([0-9]|a0)([LR])$/;
     const wayArray = [];
@@ -71,6 +68,8 @@ const MachineOfTuring = () => {
         tapeLine.pop()
         tapeLine.shift()
 
+
+
         let result = "";
 
         tapeLine.forEach((value,index)=>{
@@ -104,8 +103,7 @@ const MachineOfTuring = () => {
                     </div>
                 }
                 <div className={cl.Arrow}>
-                    <div>(q10)4L</div>
-                    <img  src={"/Arrow.png"} alt={""}/>
+
                 </div>
             </div>
             <div className={cl.Form}>
